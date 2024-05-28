@@ -15,6 +15,8 @@
 		B110290D2C0635CD00624641 /* TechieButlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110290C2C0635CD00624641 /* TechieButlerUITests.swift */; };
 		B110290F2C0635CD00624641 /* TechieButlerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110290E2C0635CD00624641 /* TechieButlerUITestsLaunchTests.swift */; };
 		B110291C2C06364C00624641 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110291B2C06364C00624641 /* Post.swift */; };
+		B110291E2C0638CB00624641 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110291D2C0638CB00624641 /* NetworkManager.swift */; };
+		B11029202C06394D00624641 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110291F2C06394D00624641 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		B110290C2C0635CD00624641 /* TechieButlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechieButlerUITests.swift; sourceTree = "<group>"; };
 		B110290E2C0635CD00624641 /* TechieButlerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechieButlerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B110291B2C06364C00624641 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B110291D2C0638CB00624641 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B110291F2C06394D00624641 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			children = (
 				B11028F12C0635CC00624641 /* TechieButlerApp.swift */,
 				B11028F32C0635CC00624641 /* ContentView.swift */,
+				B110291F2C06394D00624641 /* ContentViewModel.swift */,
 				B110291B2C06364C00624641 /* Post.swift */,
+				B110291D2C0638CB00624641 /* NetworkManager.swift */,
 				B11028F52C0635CD00624641 /* Assets.xcassets */,
 				B11028F72C0635CD00624641 /* Preview Content */,
 			);
@@ -260,9 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B110291E2C0638CB00624641 /* NetworkManager.swift in Sources */,
 				B110291C2C06364C00624641 /* Post.swift in Sources */,
 				B11028F42C0635CC00624641 /* ContentView.swift in Sources */,
 				B11028F22C0635CC00624641 /* TechieButlerApp.swift in Sources */,
+				B11029202C06394D00624641 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
