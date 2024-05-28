@@ -14,6 +14,7 @@
 		B11029032C0635CD00624641 /* TechieButlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11029022C0635CD00624641 /* TechieButlerTests.swift */; };
 		B110290D2C0635CD00624641 /* TechieButlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110290C2C0635CD00624641 /* TechieButlerUITests.swift */; };
 		B110290F2C0635CD00624641 /* TechieButlerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110290E2C0635CD00624641 /* TechieButlerUITestsLaunchTests.swift */; };
+		B110291C2C06364C00624641 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110291B2C06364C00624641 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B11029082C0635CD00624641 /* TechieButlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechieButlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B110290C2C0635CD00624641 /* TechieButlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechieButlerUITests.swift; sourceTree = "<group>"; };
 		B110290E2C0635CD00624641 /* TechieButlerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechieButlerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B110291B2C06364C00624641 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B11028F12C0635CC00624641 /* TechieButlerApp.swift */,
 				B11028F32C0635CC00624641 /* ContentView.swift */,
+				B110291B2C06364C00624641 /* Post.swift */,
 				B11028F52C0635CD00624641 /* Assets.xcassets */,
 				B11028F72C0635CD00624641 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B110291C2C06364C00624641 /* Post.swift in Sources */,
 				B11028F42C0635CC00624641 /* ContentView.swift in Sources */,
 				B11028F22C0635CC00624641 /* TechieButlerApp.swift in Sources */,
 			);
