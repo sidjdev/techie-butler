@@ -6,17 +6,27 @@
 //
 
 import Foundation
+import Combine
 
 class ContentViewModel: ObservableObject {
     @Published var posts: [Post] = []
     private var networkManager = NetworkManager()
+    private var currentPage = 1
+    var isFetching = false
 
     func fetchPosts() {
-        networkManager.performRequest(operation: .getPosts, responseType: [Post].self) { [weak self] result in
+        guard !isFetching else { return }
+        isFetching = true
+
+        let params = ["_page": currentPage, "_limit": 10]
+
+        networkManager.performRequest(operation: .getPosts, responseType: [Post].self, params: params) { [weak self] result in
             DispatchQueue.main.async {
+                self?.isFetching = false
                 switch result {
-                case .success(let posts):
-                    self?.posts = posts
+                case .success(let newPosts):
+                    self?.posts.append(contentsOf: newPosts)
+                    self?.currentPage += 1
                 case .failure(let error):
                     print("Error fetching posts: \(error)")
                 }

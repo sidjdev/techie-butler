@@ -106,9 +106,8 @@
 			children = (
 				B11028F12C0635CC00624641 /* TechieButlerApp.swift */,
 				B11029212C063A6B00624641 /* ContentView */,
+				B11029262C063AFC00624641 /* DetailView */,
 				B110291B2C06364C00624641 /* Post.swift */,
-				B11029222C063A8E00624641 /* DetailView.swift */,
-				B11029242C063AA200624641 /* DetailViewModel.swift */,
 				B110291D2C0638CB00624641 /* NetworkManager.swift */,
 				B11028F52C0635CD00624641 /* Assets.xcassets */,
 				B11028F72C0635CD00624641 /* Preview Content */,
@@ -148,6 +147,15 @@
 				B110291F2C06394D00624641 /* ContentViewModel.swift */,
 			);
 			path = ContentView;
+			sourceTree = "<group>";
+		};
+		B11029262C063AFC00624641 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				B11029222C063A8E00624641 /* DetailView.swift */,
+				B11029242C063AA200624641 /* DetailViewModel.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

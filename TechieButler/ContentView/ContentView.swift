@@ -12,15 +12,27 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.posts) { post in
-                NavigationLink(destination: DetailView(viewModel: DetailViewModel(post: post))) {
-                    VStack(alignment: .leading) {
-                        Text(post.title)
-                            .font(.headline)
-                        Text(post.body)
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
+            List {
+                ForEach(viewModel.posts) { post in
+                    NavigationLink(destination: DetailView(viewModel: DetailViewModel(post: post))) {
+                        VStack(alignment: .leading) {
+                            Text(post.title)
+                                .font(.headline)
+                            Text(post.body)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
                     }
+                }
+                // Load more when reaching the end of the list
+                if viewModel.isFetching {
+                    ProgressView()
+                        .padding()
+                } else {
+                    Color.clear
+                        .onAppear {
+                            viewModel.fetchPosts()
+                        }
                 }
             }
             .navigationTitle("Posts")
@@ -30,6 +42,7 @@ struct ContentView: View {
         }
     }
 }
+
 #Preview {
     ContentView()
 }
