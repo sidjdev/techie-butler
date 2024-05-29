@@ -15,12 +15,16 @@ struct ContentView: View {
             List {
                 ForEach(viewModel.posts) { post in
                     NavigationLink(destination: DetailView(viewModel: DetailViewModel(post: post))) {
-                        VStack(alignment: .leading) {
-                            Text(post.title)
-                                .font(.headline)
-                            Text(post.body)
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
+                        HStack(alignment: .top) {
+                            Text("\(post.id)")
+                                .padding()
+                            VStack(alignment: .leading) {
+                                Text(post.title)
+                                    .font(.headline)
+                                Text(post.body)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
                         }
                     }
                 }
